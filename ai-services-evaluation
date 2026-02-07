@@ -1,0 +1,320 @@
+AI Services Evaluation Guide
+What You’re Actually Buying
+AI services range from simple chatbots to complex document processing to predictive analytics. Most small organizations are being pitched:
+	∙	Customer service chatbots (website, phone, email)
+	∙	Document processing (invoice extraction, contract review, form filling)
+	∙	Content generation (marketing copy, social media, translations)
+	∙	Meeting tools (transcription, summarization, action items)
+	∙	Predictive analytics (sales forecasting, demand prediction, risk scoring)
+What you’re NOT buying:
+	∙	Magic that solves all problems
+	∙	A replacement for human judgment
+	∙	Technology that “just works” without ongoing management
+	∙	Something that will still be cutting-edge in 6 months
+Reality check: Most AI vendor claims are 80% hype and 20% substance. Your job is to find that 20%.
+The AI Hype Translation Guide
+
+
+
+|What Vendor Says       |What It Actually Means                                |What to Ask                                                           |
+|-----------------------|------------------------------------------------------|----------------------------------------------------------------------|
+|“AI-powered”           |We added a chatbot or use an API                      |“Which AI model specifically? Whose?”                                 |
+|“Machine learning”     |Could be anything from simple rules to actual ML      |“What are you actually predicting/classifying?”                       |
+|“Revolutionary AI”     |We’re using the same OpenAI API as everyone else      |“What’s proprietary vs. commodity components?”                        |
+|“Learns from your data”|May or may not. May use your data to train their model|“Is my data used for training? Can I opt out?”                        |
+|“99% accuracy”         |Cherry-picked metric that doesn’t reflect real usage  |“Accuracy on what task? What’s the error rate on [specific use case]?”|
+|“Explainable AI”       |Buzzword. Can they actually explain decisions?        |“Show me an explanation for a real decision.”                         |
+|“Enterprise-grade AI”  |Meaningless. No definition                            |“What specific security/compliance standards?”                        |
+|“Reduces costs by 80%” |Theoretical maximum under ideal conditions            |“Show me a case study with real numbers.”                             |
+
+Critical Questions to Ask
+Use Case & Value
+“What specific problem does this AI solve that couldn’t be solved without AI?”
+	∙	Good answer: “You process 500 invoices monthly. Human data entry takes 10 min each = 83 hours/month. Our tool extracts data in 30 seconds with 95% accuracy, human reviews in 2 min = 16 hours/month saved.”
+	∙	Red flag: “AI transforms your business” or vague productivity claims
+	∙	Why it matters: If they can’t articulate the problem clearly, they don’t have a solution
+“What’s the accuracy rate for our specific use case, and what happens when it’s wrong?”
+	∙	Good answer: “For invoice processing: 95% field-level accuracy on our test set of 1,000 invoices. Errors flagged for human review. We track error types - most are ambiguous handwriting.”
+	∙	Red flag: “Industry-leading accuracy” or “It learns and improves over time” without numbers
+	∙	Why it matters: You need to budget for error correction and understand risk
+“How much human oversight is required?”
+	∙	Good answer: “Initial setup: 40 hours training data preparation. Ongoing: 10% of outputs require human review, averaging 2 hours/week.”
+	∙	Red flag: “Fully automated” or “Set it and forget it”
+	∙	Why it matters: There’s no such thing as truly autonomous AI for business-critical tasks
+Data & Privacy
+“Where does our data go and who has access?”
+	∙	Good answer: “Data processed in AWS us-east-1, encrypted in transit and at rest. Only you and our SOC 2 certified ops team. Data never leaves your tenant.”
+	∙	Red flag: “Secure cloud infrastructure” without specifics
+	∙	Why it matters: You’re liable for data breaches, not them
+“Is our data used to train or improve your models?”
+	∙	Good answer: “No. Your data is used only for your inferences. We use opt-in anonymized data pools for model improvements with explicit consent.”
+	∙	Red flag: “We use data to improve our service” without opt-out, or silence on this topic
+	∙	Why it matters: Your sensitive data could train models your competitors use
+“How do we get our data back if we cancel?”
+	∙	Good answer: “Full data export in JSON/CSV format within 7 days. Includes all inputs, outputs, and audit logs. Complete deletion from our systems within 30 days, certified.”
+	∙	Red flag: “We’ll work with you on that” or export fees
+	∙	Why it matters: Your data held hostage = expensive lock-in
+“Do you comply with GDPR/CCPA even though we’re not required to?”
+	∙	Good answer: “Yes, we’re GDPR compliant globally. You can request deletion, export data, and we honor do-not-sell requests.”
+	∙	Red flag: “That doesn’t apply to you” or blank stare
+	∙	Why it matters: Privacy regulations are expanding. Better to be ahead than scrambling later
+Technical Reality
+“Which AI model are you using and is it yours?”
+	∙	Good answer: “We use OpenAI’s GPT-4 API for content generation and our own fine-tuned BERT model for classification, trained on 50K industry-specific examples.”
+	∙	Red flag: “Proprietary AI technology” without specifics or “Advanced neural networks”
+	∙	Why it matters: If it’s just an OpenAI wrapper, you’re overpaying
+“What happens if the underlying AI service (OpenAI, Google, etc.) goes down or changes pricing?”
+	∙	Good answer: “We have fallback to Azure OpenAI. Contract includes price protection - we absorb API cost increases up to 25% for your contract term.”
+	∙	Red flag: “That’s very unlikely” or no contingency plan
+	∙	Why it matters: OpenAI has had outages. Prices have increased. You need a plan.
+“How do you prevent hallucinations/false information?”
+	∙	Good answer: “We use RAG (retrieval-augmented generation) grounded in your documents only. Confidence scoring flags uncertain responses. Human review required for high-stakes decisions.”
+	∙	Red flag: “Our AI is very reliable” or doesn’t understand the question
+	∙	Why it matters: All LLMs hallucinate. Question is how they mitigate it.
+“Can you show me the AI making a mistake and how you handle it?”
+	∙	Good answer: Shows real error case, explains detection method, describes remediation
+	∙	Red flag: “Our AI doesn’t make significant errors” or won’t demonstrate
+	∙	Why it matters: If they can’t show you errors, they don’t know their system well enough
+Costs & ROI
+“What’s the total cost of ownership including setup, training, integration, and ongoing monitoring?”
+	∙	Good answer: “Setup: $5K (data prep, integration). Monthly: $500 base + $0.10/transaction. Typical client with 1K transactions = $600/month. Expected 6-month ROI based on 20 hours/week saved at $25/hour.”
+	∙	Red flag: “Starting at $X” without full breakdown or usage-based pricing without caps
+	∙	Why it matters: AI projects have high hidden costs. Budget for reality, not marketing.
+“What happens if usage exceeds estimates?”
+	∙	Good answer: “Soft cap at 2,000 transactions. We alert you at 80%. Overages billed at same $0.10 rate. No surprise bills - you approve increases.”
+	∙	Red flag: “Unlimited usage” or exponential overage pricing
+	∙	Why it matters: Per-token pricing can explode. You need predictability.
+“How long before we see ROI and what’s your track record?”
+	∙	Good answer: “Typical client breaks even month 4-5. Here’s a case study: [specific client] saved $30K annually, paid $18K year one = $12K net positive, year two $30K positive.”
+	∙	Red flag: “Immediate ROI” or “It pays for itself” without specifics
+	∙	Why it matters: AI projects take time to show value. Beware unrealistic promises.
+Bias & Fairness
+“Has your AI been tested for bias relevant to our population?”
+	∙	Good answer: “Yes, we tested across age, gender, race, income demographics. Found 3% higher error rate for handwritten applications from ages 65+. We implemented additional review for those cases.”
+	∙	Red flag: “AI doesn’t have bias” or “We use diverse training data” without testing
+	∙	Why it matters: Biased AI can discriminate illegally and damage your reputation
+“Can we audit decisions made by the AI?”
+	∙	Good answer: “Full audit log: input, output, confidence score, model version, timestamp. You can replay any decision. We provide quarterly bias audits.”
+	∙	Red flag: “Black box” or “Proprietary algorithms we can’t share”
+	∙	Why it matters: You can’t defend decisions you can’t explain
+“What happens if we discover the AI is making unfair decisions?”
+	∙	Good answer: “We pause the system, investigate root cause, retrain if needed, and compensate for incorrect decisions during that period per our SLA.”
+	∙	Red flag: “That’s very unlikely” or no plan
+	∙	Why it matters: It will happen. You need a response plan.
+Evaluation Scorecard
+
+
+
+|Category                       |Weight|Score (1-5)|Notes|
+|-------------------------------|------|-----------|-----|
+|**Problem-Solution Fit**       |25%   |           |     |
+|- Clearly defined problem      |      |           |     |
+|- AI is appropriate solution   |      |           |     |
+|- Measurable success criteria  |      |           |     |
+|- Realistic ROI timeline       |      |           |     |
+|**Data Governance**            |25%   |           |     |
+|- Data security/privacy        |      |           |     |
+|- No training on our data      |      |           |     |
+|- Clear data ownership         |      |           |     |
+|- Export/deletion process      |      |           |     |
+|**Technical Credibility**      |20%   |           |     |
+|- Specific about models used   |      |           |     |
+|- Realistic accuracy claims    |      |           |     |
+|- Hallucination prevention     |      |           |     |
+|- Failure handling             |      |           |     |
+|**Cost Transparency**          |15%   |           |     |
+|- Total cost of ownership clear|      |           |     |
+|- No surprise pricing          |      |           |     |
+|- Realistic ROI projections    |      |           |     |
+|- Exit costs reasonable        |      |           |     |
+|**Accountability**             |10%   |           |     |
+|- Bias testing done            |      |           |     |
+|- Audit capabilities           |      |           |     |
+|- Error correction process     |      |           |     |
+|- Human oversight required     |      |           |     |
+|**Vendor Viability**           |5%    |           |     |
+|- Financially stable           |      |           |     |
+|- Not dependent on single API  |      |           |     |
+|- References available         |      |           |     |
+
+Scoring:
+	∙	5 = Exceeds expectations
+	∙	4 = Meets all requirements
+	∙	3 = Acceptable
+	∙	2 = Significant concerns
+	∙	1 = Unacceptable
+Minimum passing score: 3.5 weighted average
+Auto-fail criteria:
+	∙	Won’t disclose if they train on your data
+	∙	Can’t explain accuracy claims with data
+	∙	No audit trail
+	∙	“Fully autonomous” for high-stakes decisions
+	∙	Vendor is <1 year old with no track record
+Red Flags - AI Edition
+Hype Red Flags
+	∙	🚩 “Revolutionary AI” - It’s probably OpenAI’s API wrapped in a UI
+	∙	🚩 “Powered by neural networks” - Technically true of most AI, tells you nothing
+	∙	🚩 “Self-learning AI” without explaining what it learns from - Marketing speak
+	∙	🚩 “Human-level intelligence” - Absolutely not true for any business AI tool
+	∙	🚩 “Explainable AI” but can’t actually explain a decision - They don’t know what this means
+Data & Privacy Red Flags
+	∙	🚩 Vague about data usage - Assume they’re training on your data
+	∙	🚩 “Data stays secure in the cloud” without specifying where/how - Meaningless
+	∙	🚩 Can’t explain data retention/deletion - You’ll never get your data back
+	∙	🚩 No mention of encryption - Your data is probably stored in plain text
+	∙	🚩 Requires excessive data access - They’re gathering training data, not solving your problem
+Technical Red Flags
+	∙	🚩 “Proprietary algorithm” for commodity tasks - It’s not proprietary, they’re just secretive
+	∙	🚩 Won’t name the underlying model - They don’t want you to know it’s basic
+	∙	🚩 “99%+ accuracy” without explaining on what - Cherry-picked or fictional
+	∙	🚩 “No hallucinations” - Every LLM hallucinates. They’re lying.
+	∙	🚩 Can’t demo failure cases - They don’t understand their own system
+Cost Red Flags
+	∙	🚩 “Per token” pricing without caps - Your bill could be anything
+	∙	🚩 Free tier that requires credit card - They’ll charge you before you realize
+	∙	🚩 Vague about setup/integration costs - These will exceed the subscription
+	∙	🚩 ROI claims without case studies - Made up numbers
+	∙	🚩 “Saves X hours” without accounting for oversight time - Lying about labor savings
+Accountability Red Flags
+	∙	🚩 “AI makes unbiased decisions” - All AI has bias. Question is whether they test for it.
+	∙	🚩 “Fully automated decision-making” for anything important - Illegal in many contexts
+	∙	🚩 No audit trail - You can’t defend what you can’t explain
+	∙	🚩 Black box that can’t be questioned - Huge liability risk
+	∙	🚩 “Trust the AI” - Never trust without verification
+When NOT to Use AI
+Don’t use AI for:
+❌ High-stakes decisions without human review
+	∙	Hiring/firing decisions
+	∙	Benefits eligibility
+	∙	Medical diagnoses
+	∙	Legal determinations
+	∙	Anything with significant life impact
+❌ Tasks requiring legal/regulatory explainability
+	∙	Fair lending decisions
+	∙	Civil rights compliance
+	∙	Safety-critical systems
+	∙	Anywhere you need to justify decisions to regulators
+❌ Small data sets where traditional approaches work
+	∙	100 transactions/month doesn’t need AI-powered processing
+	∙	Simple if/then rules often work better than ML
+❌ Core competencies where you’ll lose institutional knowledge
+	∙	Don’t automate away expertise you’ll need to understand your business
+❌ When you can’t afford to verify outputs
+	∙	If you don’t have budget/time for human review, you can’t afford AI
+	∙	Garbage in, garbage out - but faster and at scale
+❌ Sensitive contexts where errors cause serious harm
+	∙	Child welfare decisions
+	∙	Criminal justice
+	∙	Medical treatment
+	∙	Emergency response (without human verification)
+Responsible AI Quick Policy
+Before deploying any AI system, ensure you can answer YES to all:
+✅ We have a human who understands how this AI works✅ We can explain AI decisions to affected people✅ We have a process to handle AI errors✅ We’ve tested for bias relevant to our population✅ We have human review for high-stakes decisions✅ We can turn it off if it goes wrong✅ We own our data and can get it back✅ We’ve documented what the AI should/shouldn’t be used for
+If you can’t answer yes to all of these, you’re not ready to deploy AI safely.
+Real Examples (Anonymized)
+Good AI Proposal
+Use Case: Automate invoice data entry from scanned vendor invoices
+How it works:
+	∙	Uses Google Document AI (Vision API) for OCR
+	∙	Custom classification model (our proprietary) trained on 10K invoices to extract: vendor, date, amount, line items, tax
+	∙	Confidence scoring flags uncertain extractions for human review
+Performance:
+	∙	Field-level accuracy: 94% (tested on 1,000 held-out invoices)
+	∙	15% of invoices flagged for review (poor scan quality or handwritten)
+	∙	Processing time: 30 seconds vs. 10 minutes manual
+Your data:
+	∙	Processed in GCP us-central1, encrypted at rest (AES-256) and in transit (TLS 1.3)
+	∙	NOT used for model training
+	∙	Full export available anytime as JSON
+	∙	Deleted within 30 days of contract termination
+Pricing:
+	∙	Setup: $3,000 (integration with your accounting system, 40 hours)
+	∙	Monthly: $400 base + $0.50/invoice
+	∙	Your volume (500/month) = $650/month
+	∙	Estimated savings: 70 hours/month at $25/hour = $1,750/month
+	∙	ROI: Month 3
+SLA:
+	∙	99% uptime
+	∙	95%+ accuracy or 10% monthly credit
+	∙	Accuracy reported monthly with error analysis
+References: [Three similar-sized nonprofits]
+Why this is good:
+	∙	Specific problem, specific solution
+	∙	Names actual technology used
+	∙	Real accuracy numbers with context
+	∙	Clear data handling
+	∙	Transparent pricing with realistic ROI
+	∙	Enforceable SLA
+	∙	Acknowledges limitations (15% need review)
+Bad AI Proposal
+Transform Your Invoice Processing with AI
+InvoiceGenius leverages cutting-edge artificial intelligence and machine learning to revolutionize your accounts payable workflow. Our proprietary neural networks, trained on millions of invoices, deliver human-level accuracy with lightning-fast processing.
+Benefits:
+	∙	99.9% accuracy
+	∙	Reduce costs by up to 90%
+	∙	Fully automated processing
+	∙	Enterprise-grade security
+	∙	Seamless integration
+Investment:
+Starting at $499/month
+Why InvoiceGenius:
+	∙	Industry-leading AI technology
+	∙	Trusted by thousands of businesses
+	∙	Award-winning customer support
+	∙	Continuous learning AI that gets smarter over time
+Contact us for a personalized demo!
+Why this is terrible:
+	∙	Pure marketing fluff, zero technical specifics
+	∙	“Proprietary neural networks” - what does this mean?
+	∙	“99.9% accuracy” - on what? How measured?
+	∙	“Fully automated” - dangerous claim
+	∙	“Starting at $499” - what are actual costs?
+	∙	No mention of data handling
+	∙	“Human-level accuracy” - false claim
+	∙	No evidence, no references, no specifics
+Real Horror Story
+What they sold:
+“AI-powered customer service that handles 90% of inquiries automatically, reducing support costs by $50K annually.”
+What they delivered:
+	∙	Chatbot that could only handle 30% of actual inquiries
+	∙	Remaining 70% created frustrated customers AND support tickets
+	∙	Training the AI required 200 hours of staff time (not mentioned in proposal)
+	∙	Per-conversation pricing hit $2,500/month (they said “$500-1000”)
+	∙	Couldn’t integrate with existing systems, required manual data sync
+	∙	“AI learning” meant other clients’ data trained the model
+	∙	When they tried to cancel: $5,000 “deployment recovery fee” + 90 days notice
+Red flags they missed:
+	∙	No demo on their actual customer service data
+	∙	Vague “90% automation” claim without proof
+	∙	Didn’t ask about training time required
+	∙	No pricing cap on usage-based model
+	∙	Didn’t review contract termination clause
+	∙	Didn’t ask about data sharing between clients
+Actual cost: $30K spent over 8 months, 300 hours of staff time, damaged customer relationships. Went back to human support.
+Decision Framework
+Before you even talk to vendors:
+	1.	Define the problem clearly - What exactly are you trying to solve?
+	2.	Quantify current cost - How many hours/dollars does this problem cost now?
+	3.	Determine acceptable error rate - What % wrong can you tolerate?
+	4.	Identify human oversight capacity - Who will review AI outputs?
+	5.	Set a realistic budget - Include setup, integration, monitoring, error correction
+	6.	Document your data governance requirements - What are your non-negotiables?
+Vendor evaluation process:
+	1.	RFP with specific questions - Use the questions in this guide
+	2.	Require proof, not promises - Live demo on your data, not canned demo
+	3.	Check references thoroughly - Ask about problems, not just success
+	4.	Pilot before committing - 30-90 day pilot with < 1 year contract
+	5.	Legal review - Attorney reviews contract, especially data clauses
+Start small:
+	∙	Narrow use case - Solve one specific problem, not “AI transformation”
+	∙	Limited data - Don’t give them access to everything upfront
+	∙	Human verification - Plan to verify 100% of outputs initially
+	∙	Defined success metrics - “Must achieve X accuracy on Y task by Z date or we can exit”
+	∙	Exit strategy - How do you shut this down if it fails?
+Red flag threshold:
+	∙	1-2 minor red flags - Proceed with caution, get clarification
+	∙	3+ minor red flags OR 1 major - Seriously reconsider
+	∙	Any auto-fail criteria - Walk away
+Remember: AI vendors are incentivized to oversell and under-deliver. Your job is to cut through the hype and determine if there’s real value. When in doubt, start with a smaller, simpler solution or don’t use AI at all.
+
+Both guides are ready for the repository. Want me to draft any of the templates next (RFP template, evaluation scorecard, reference check questions), or should we move to the CONTRIBUTING.md and CODE_OF_CONDUCT.md files?
