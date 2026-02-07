@@ -1,0 +1,247 @@
+Managed Service Provider (MSP) Evaluation Guide
+What You’re Actually Buying
+An MSP provides ongoing IT support and infrastructure management. Think of them as your outsourced IT department. They should:
+	∙	Monitor your systems 24/7 and fix problems before you notice them
+	∙	Provide helpdesk support when your staff has IT issues
+	∙	Manage security including patches, backups, and threat monitoring
+	∙	Plan and execute technology improvements
+	∙	Be available during outages and emergencies
+What you’re NOT buying:
+	∙	A vendor who only shows up when things break (that’s break-fix, not managed services)
+	∙	Someone to blame when IT fails (you need a partner who prevents failures)
+	∙	A company that treats you like an ATM
+Critical Questions to Ask
+Service Delivery
+“What’s included in your base monthly fee and what costs extra?”
+	∙	Good answer: Detailed list with specifics (monitoring, patch management, helpdesk 8am-6pm, monthly security reports, quarterly business reviews)
+	∙	Red flag: “Comprehensive managed services” without specifics, or “it depends”
+	∙	Why it matters: “All-inclusive” often means nothing is actually included when you need it
+“What’s your average response time and resolution time, and what happens if you miss it?”
+	∙	Good answer: “30 minutes for critical, 4 hours for high priority. If we miss SLA, you get 10% credit for that month. Here’s our performance from last quarter.”
+	∙	Red flag: “Industry-leading response times” or guarantees without penalties
+	∙	Why it matters: Without financial penalties, SLAs are just marketing copy
+“How do you handle after-hours emergencies?”
+	∙	Good answer: “24/7 NOC monitoring. Critical alerts page on-call engineer within 15 minutes. You have direct escalation number.”
+	∙	Red flag: “Call the helpdesk and leave a message” or expensive per-incident after-hours fees
+	∙	Why it matters: Your email server doesn’t break on schedule
+“Who will be our primary engineer and what’s their background?”
+	∙	Good answer: Introduces specific person, shares their experience, explains backup coverage
+	∙	Red flag: “You’ll work with our team” (you’ll get whoever is available, usually junior staff)
+	∙	Why it matters: Relationships matter. You want someone who knows your environment.
+Technical Capabilities
+“What monitoring tools do you use and can we see the dashboard?”
+	∙	Good answer: Names specific tools (SolarWinds, Datto, ConnectWise, etc.), offers to demo the client portal
+	∙	Red flag: Proprietary tools or “we’ll set that up if you sign”
+	∙	Why it matters: You need visibility into your own infrastructure
+“How do you handle backups and what’s your disaster recovery process?”
+	∙	Good answer: “Daily incremental, weekly full backups. Encrypted, stored offsite. 4-hour RTO, 1-hour RPO. We test restores monthly. Here’s our DR runbook.”
+	∙	Red flag: “We back everything up” without specifics about frequency, testing, or recovery time
+	∙	Why it matters: Backups are useless if you can’t restore them quickly
+“What’s your patch management process?”
+	∙	Good answer: “Critical security patches within 48 hours after testing. Standard patches monthly during maintenance window. We notify you 48 hours before.”
+	∙	Red flag: “We keep everything updated” or automatic patches with no testing
+	∙	Why it matters: Bad patches break systems. No patches get you hacked.
+“How do you handle security incidents?”
+	∙	Good answer: “24/7 SIEM monitoring, automated threat response, incident response plan with defined escalation. We’re SOC 2 Type II certified.”
+	∙	Red flag: “We have antivirus on everything” or vague “best practices”
+	∙	Why it matters: When (not if) you get attacked, you need a real plan
+Business Relationship
+“What’s your average client retention and why do clients leave?”
+	∙	Good answer: “85% retention over 3 years. Clients who leave usually outgrow us or get acquired. Here are three references.”
+	∙	Red flag: Evasive answer or “We don’t track that”
+	∙	Why it matters: If they can’t keep clients, there’s a reason
+“How do you charge for projects vs. ongoing support?”
+	∙	Good answer: “Monthly fee covers monitoring, support, and standard maintenance. Projects like migrations are quoted separately with fixed prices. Here’s our rate card.”
+	∙	Red flag: “Everything is billable” or vague “we’ll work with you”
+	∙	Why it matters: Surprise bills destroy budgets
+“What happens to our data and systems if we terminate the contract?”
+	∙	Good answer: “30-day transition period included. We’ll export all documentation, hand over admin credentials, and assist new provider. No data held hostage.”
+	∙	Red flag: “We’ll need to discuss that” or expensive exit fees
+	∙	Why it matters: You need an exit strategy before you sign
+“Can you provide three references from organizations similar to ours?”
+	∙	Good answer: Provides contacts, ideally in your industry/size, encourages you to call them
+	∙	Red flag: “Due to NDAs…” or only gives you their best client
+	∙	Why it matters: Similar orgs = relevant experience
+Evaluation Scorecard
+
+
+
+|Category                   |Weight|Score (1-5)|Notes|
+|---------------------------|------|-----------|-----|
+|**Technical Capability**   |25%   |           |     |
+|- Monitoring/alerting tools|      |           |     |
+|- Backup/DR processes      |      |           |     |
+|- Security practices       |      |           |     |
+|- Documentation quality    |      |           |     |
+|**Service Delivery**       |25%   |           |     |
+|- Response time guarantees |      |           |     |
+|- SLA penalties            |      |           |     |
+|- After-hours support      |      |           |     |
+|- Escalation process       |      |           |     |
+|**Communication**          |20%   |           |     |
+|- Account management       |      |           |     |
+|- Regular reporting        |      |           |     |
+|- Explains issues clearly  |      |           |     |
+|- Proactive recommendations|      |           |     |
+|**Value**                  |15%   |           |     |
+|- Transparent pricing      |      |           |     |
+|- Appropriate for our size |      |           |     |
+|- No surprise fees         |      |           |     |
+|- Fair contract terms      |      |           |     |
+|**Cultural Fit**           |10%   |           |     |
+|- Understands our mission  |      |           |     |
+|- Respectful communication |      |           |     |
+|- Partnership mindset      |      |           |     |
+|**Stability**              |5%    |           |     |
+|- Years in business        |      |           |     |
+|- Client retention         |      |           |     |
+|- Financial stability      |      |           |     |
+
+Scoring:
+	∙	5 = Exceeds expectations
+	∙	4 = Meets all requirements
+	∙	3 = Acceptable
+	∙	2 = Concerns exist
+	∙	1 = Unacceptable
+Minimum passing score: 3.5 weighted average
+Red Flags - MSP Edition
+Pricing Red Flags
+	∙	🚩 “Unlimited support” - Nothing is unlimited. There will be limits and they’ll appear when you need help most.
+	∙	🚩 Per-incident fees for things that should be included - Every email issue shouldn’t cost $150
+	∙	🚩 Significant price differences between years 1 and 2 - They’re buying your business then jacking up rates
+	∙	🚩 “Per device” pricing without defining “device” - Is a phone a device? A printer? A VM?
+	∙	🚩 Setup fees over 1x monthly - They’re padding the bill
+Service Red Flags
+	∙	🚩 Remote-only support with no onsite option - Some things require hands on keyboards
+	∙	🚩 Offshore-only helpdesk during your business hours - Language barriers during emergencies are brutal
+	∙	🚩 Tiered support requiring you to troubleshoot first - You’re not paying them to make you do their job
+	∙	🚩 No guaranteed response times - “As soon as possible” means “whenever we feel like it”
+	∙	🚩 Cloud-only backup with no local copy - You’re one internet outage away from no access to your data
+Technical Red Flags
+	∙	🚩 “We support everything” - Jack of all trades, master of none
+	∙	🚩 Proprietary tools you can’t access - You can’t see what you’re paying for
+	∙	🚩 No formal change management - They’ll break things with untested changes
+	∙	🚩 Microsoft Partner/certifications are their only credential - Those cost $300/year, they mean nothing
+	∙	🚩 Can’t explain their security monitoring - They probably don’t have any
+Relationship Red Flags
+	∙	🚩 3+ year contract for first engagement - They know you’ll want to leave
+	∙	🚩 Auto-renewal with 90+ day cancellation notice - Calendar that now, you’ll forget
+	∙	🚩 Insists on admin access to everything immediately - Security risk and control issue
+	∙	🚩 Won’t provide references - They don’t have happy clients
+	∙	🚩 High-pressure sales tactics - “Sign by Friday for this price” means they’re desperate
+Typical Pricing Ranges (2025-2026)
+Per user/month for small orgs (10-50 users):
+	∙	Basic: $100-150/user - Monitoring, antivirus, patch management, helpdesk (business hours)
+	∙	Standard: $150-200/user - Above plus backup, after-hours support, quarterly reviews
+	∙	Comprehensive: $200-300/user - Above plus advanced security, compliance support, strategic planning
+What drives prices up:
+	∙	24/7 support requirements
+	∙	Compliance needs (HIPAA, SOC 2, etc.)
+	∙	Complex infrastructure (multiple locations, hybrid cloud)
+	∙	Legacy systems requiring specialized knowledge
+What should NOT drive prices up:
+	∙	Being a nonprofit (some MSPs prey on nonprofits, assuming you have grants)
+	∙	“Emergency onboarding” (self-created urgency)
+	∙	Your lack of technical knowledge
+Hidden costs to ask about:
+	∙	Project work (migrations, upgrades)
+	∙	After-hours emergency support
+	∙	Onsite visits
+	∙	Software licensing markup (should be pass-through)
+	∙	Per-incident fees
+Common Contract Gotchas
+What to Negotiate
+Auto-renewal:
+	∙	Bad: “This agreement automatically renews for successive one-year terms unless cancelled 90 days prior to renewal.”
+	∙	Better: “This agreement renews annually with 30 days notice to cancel.”
+Termination:
+	∙	Bad: “Client may terminate with 90 days notice and payment of early termination fee equal to 3 months service.”
+	∙	Better: “Either party may terminate with 30 days notice. No early termination fees after first 90 days.”
+Scope creep:
+	∙	Bad: “MSP will provide reasonable support for Client’s IT environment.”
+	∙	Better: “Services include: [specific list]. Additional services require written approval and separate SOW.”
+Data ownership:
+	∙	Bad: Silent on data ownership and portability
+	∙	Better: “Client retains all ownership of data. MSP will provide all data in standard formats within 15 days of termination at no cost.”
+Liability caps:
+	∙	Bad: “MSP liability limited to monthly service fee.”
+	∙	Better: “MSP liability limited to 12 months of service fees, excluding gross negligence.”
+SLA penalties:
+	∙	Bad: “MSP will use commercially reasonable efforts to meet SLAs.”
+	∙	Better: “Failure to meet SLAs results in 10% service credit per occurrence, maximum 50% monthly fee.”
+Real Examples (Anonymized)
+Good Proposal Language
+“Our standard support package for your 25-person team includes:
+	∙	24/7 infrastructure monitoring via SolarWinds
+	∙	Helpdesk support 7am-7pm CT, 1-hour response time
+	∙	Daily incremental backups, weekly full, 30-day retention
+	∙	Monthly patch management during agreed maintenance windows
+	∙	Quarterly security assessments and business reviews
+	∙	Dedicated engineer: Sarah Chen (10 years experience, healthcare IT)
+Cost: $175/user/month = $4,375/month
+NOT included (quoted separately):
+	∙	After-hours emergency support: $200/hour
+	∙	Onsite visits: $150/hour + travel
+	∙	Projects (migrations, new deployments): Fixed-price SOW
+SLA: 99.5% uptime. Credits: 5% per 0.1% below 99.5%”
+Why this is good:
+	∙	Specific tools and processes
+	∙	Named engineer
+	∙	Clear pricing with no surprises
+	∙	Honest about what costs extra
+	∙	Enforceable SLA with penalties
+Bad Proposal Language
+“TechPro Solutions offers comprehensive managed IT services leveraging industry-leading tools and best practices to ensure your organization’s technology infrastructure operates at peak performance.
+Our team of certified professionals provides:
+	∙	Proactive monitoring and management
+	∙	Unlimited helpdesk support
+	∙	Enterprise-grade security
+	∙	Backup and disaster recovery
+	∙	Strategic technology planning
+Investment: Contact us for custom pricing
+We guarantee 99.9% uptime and industry-leading response times.”
+Why this is terrible:
+	∙	Zero specifics about tools or processes
+	∙	“Unlimited” support (lie)
+	∙	“Enterprise-grade” is meaningless
+	∙	No actual pricing
+	∙	SLA with no penalties = worthless promise
+	∙	Pure marketing fluff
+Real Reference Check Gotcha
+What MSP told you to ask their reference:
+“How’s your experience with ABC Managed Services?”
+What you should actually ask:
+	1.	“How long have you worked with them and have you ever tried to leave?”
+	2.	“What’s one thing they do poorly that you wish they’d improve?”
+	3.	“Have you ever had a major outage? How did they handle it?”
+	4.	“Do they explain things clearly or talk down to you?”
+	5.	“Have you ever received a surprise bill? For what?”
+	6.	“If you could start over, would you choose them again?”
+The reference the MSP gives you will be a happy client. But even happy clients will tell you the truth if you ask the right questions.
+When NOT to Use an MSP
+You might not need an MSP if:
+	∙	✅ You have 5 or fewer users with simple needs (Google Workspace + laptop support)
+	∙	✅ You have a competent part-time IT person who can handle everything
+	∙	✅ You’re comfortable with business risk of no redundancy/backup for your IT person
+	∙	✅ Your IT needs are purely software-as-a-service with no on-premise infrastructure
+Consider break-fix or consulting hours instead of managed services if:
+	∙	Your needs are truly intermittent (a few hours per quarter)
+	∙	You have technical leadership who can direct contractors
+	∙	You don’t have mission-critical uptime requirements
+Decision Framework
+Shortlist 3-4 MSPs based on:
+	1.	Similar client size/industry
+	2.	Geographic proximity (for onsite needs)
+	3.	Appropriate pricing tier
+	4.	Relevant certifications (if you have compliance needs)
+Evaluation process:
+	1.	Initial calls (30 min each) - Gut check, basic alignment
+	2.	Detailed proposals with specific scope and pricing
+	3.	Reference checks (minimum 2 per finalist)
+	4.	Technical deep dive (demo their tools, meet your engineer)
+	5.	Contract review (attorney review if >$50K annual)
+	6.	Final decision based on scorecard + gut
+Start small:
+	∙	6-month initial term if possible (they’ll want 1+ year)
+	∙	Defined pilot scope rather than all-in immediately
+	∙	Clear success metrics - What does good look like at 90 days?
